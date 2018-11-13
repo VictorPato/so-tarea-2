@@ -102,6 +102,7 @@ void nDestroyMonitor(nMonitor mon);  /* Destruye un monitor */
 void nEnter(nMonitor mon);           /* Ingreso al monitor */
 void nExit(nMonitor mon);            /* Salida del monitor */
 void nWait(nMonitor mon);            /* Libera el monitor y suspende */
+void nWaitTimeout(nMonitor mon, int timeout); /* Libera el monitor y suspende con timeout para tarea 2 */
 void nNotifyAll(nMonitor mon);       /* Retoma tareas suspendidas */
  
 nCondition nMakeCondition(nMonitor mon); /* Construye una condicion */
